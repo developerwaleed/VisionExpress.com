@@ -49,6 +49,11 @@ Start the server
   npm run start
 ```
 
+Run the tests
+
+```bash
+  `npm run test`
+```
 ### Authors
 
 | 👤 Name | Github | Twitter | LinkedIn |
