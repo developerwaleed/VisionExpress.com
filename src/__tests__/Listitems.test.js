@@ -1,7 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import Listitems from '../app/components/Listitems/Listitems.js';
+import Listitems from '../app/components/Listitems/Listitems';
 import store from '../redux/configureStore';
 
 it('renders properly', () => {
