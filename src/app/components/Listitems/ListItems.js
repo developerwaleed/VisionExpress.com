@@ -2,17 +2,17 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BsSearch } from 'react-icons/bs';
-import { fetchProducts, productFilter } from '../redux/products/products';
-import ProductComponent from './ProductComponent';
+import { fetchItems, itemFilter } from '../../../redux/products/products';
+import ItemCard from '../ItemCard/ItemCard';
 import styles from './ListItems.module.css';
 
-const ProductPage = () => {
+const Listitems = () => {
   const productData = useSelector((state) => state.allProducts.products);
   const dispatch = useDispatch();
 
   useEffect(() => {
     if (productData.length === 0) {
-      dispatch(fetchProducts());
+      dispatch(fetchItems());
     }
   }, []);
 
@@ -21,9 +21,9 @@ const ProductPage = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     if (search === '') {
-      dispatch(fetchProducts());
+      dispatch(fetchItems());
     } else {
-      dispatch(productFilter(search));
+      dispatch(itemFilter(search));
     }
   };
 
@@ -44,10 +44,10 @@ const ProductPage = () => {
         </button>
       </div>
       <div className={styles.itemsSection}>
-        <ProductComponent />
+        <ItemCard />
       </div>
     </>
   );
 };
 
-export default ProductPage;
+export default Listitems;
