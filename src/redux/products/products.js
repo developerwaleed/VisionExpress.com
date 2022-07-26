@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const GET_PRODUCTS = 'Meta-TechDrip/products/GET_PRODUCTS';
-const SELECTED_PRODUCTS = 'Meta-TechDrip/products/SELECTED_PRODUCTS';
-const REMOVE_SELECTED_PRODUCTS = 'Meta-TechDrip/products/REMOVE_SELECTED_PRODUCTS';
-const FILTER = 'Meta-TechDrip/products/FILTER';
+const GET_PRODUCTS = 'VisionExpress.com/products/GET_PRODUCTS';
+const SELECTED_PRODUCTS = 'VisionExpress.com/products/SELECTED_PRODUCTS';
+const REMOVE_SELECTED_PRODUCTS = 'VisionExpress.com/products/REMOVE_SELECTED_PRODUCTS';
+const FILTER = 'VisionExpress.com/products/FILTER';
 
 export const getItems = (products) => ({
   type: GET_PRODUCTS,

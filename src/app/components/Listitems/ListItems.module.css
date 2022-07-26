@@ -50,7 +50,7 @@
   }
 
   .itemsSection {
-     grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
     column-gap: 1rem;
     row-gap: 2rem;
