@@ -37,23 +37,58 @@
 }
 
 .itemName {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
+  color: black;
 }
 
 .itemPrice {
-  font-size: 1.7rem;
+  color: green;
 }
 
 .itemCategory {
-  font-size: 0.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: 500;
+  background-color: var(--color-2);
+  border-radius: 20px;
+  width: fit-content;
+  align-self: center;
+  padding: 0.3rem 0.7rem;
 }
 
 .itemDescription {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    row-gap: 0.5rem;
-    padding: 0.7rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  row-gap: 0.5rem;
+  padding: 0.7rem 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .loadingHome {
+    margin: 11rem 43rem;
   }
+
+  .itemCard {
+    max-width: 300px;
+    min-height: 390px;
+  }
+  .itemImage img {
+    width: 45%;
+  }
+
+  .itemName {
+    font-size: 1.1rem;
+  }
+
+  .itemPrice {
+    font-size: 1.7rem;
+  }
+
+  .itemCategory {
+    font-size: 0.7rem;
+  }
+}

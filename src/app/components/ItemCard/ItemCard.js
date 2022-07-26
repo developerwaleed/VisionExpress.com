@@ -16,16 +16,18 @@ const ProductComponent = () => {
     const { id, title, image, price, category } = product;
     return (
       <div className={styles.item} key={id}>
-        <div className={styles.itemCard}>
-          <div className={styles.itemImage}>
-            <img src={image} alt={title} />
+        <Link to={`/product/${id}`}>
+          <div className={styles.itemCard}>
+            <div className={styles.itemImage}>
+              <img src={image} alt={title} />
+            </div>
+            <div className={styles.itemDescription}>
+              <h3 className={styles.itemName}>{title}</h3>
+              <h4 className={styles.itemPrice}>${price}</h4>
+              <h5 className={styles.itemCategory}>{category}</h5>
+            </div>
           </div>
-          <div className={styles.itemDescription}>
-            <h3 className={styles.itemName}>{title}</h3>
-            <h4 className={styles.itemPrice}>${price}</h4>
-            <h5 className={styles.itemCategory}>{category}</h5>
-          </div>
-        </div>
+        </Link>
       </div>
     );
   });
