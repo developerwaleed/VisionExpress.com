@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 4rem;
+  padding: 15px;
+  box-shadow: rgb(50 50 93 / 15%) 0 4px 6px -2px;
+  background-color: var(--color-2);
+  color: #fff;
+  margin: auto auto;
+}
+
+.backBtn {
+  color: #fff;
+}
+
+.shopName {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+}
+
+.icons {
+  padding: 0 5px;
+}

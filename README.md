@@ -1,46 +1,81 @@
-# Getting Started with Create React App and Redux
+# Vision Express App 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![App Screenshot](./mock.png)
 
-## Available Scripts
+## Welcome! 👋
 
-In the project directory, you can run:
+> VisionExpress.com is a Web Application which fetches the data from an API and display its details 🙌
 
-### `npm start`
+## Built With ✔️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML 😄
+- Css 🔥
+- JavaScript ES6 😋
+- REACT 🔥🔥🔥🔥🔥
+- Redux 😉
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+[netlify](https://monumental-praline-eef042.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Presentation
 
-### `npm run build`
+[LINK](https://drive.google.com/file/d/1wR0BFa9uF0BVZBYILmL8C6MfTAzZKph5/view?usp=sharing)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  git clone https://github.com/developerwaleed/VisionExpress.com.git
+```
 
-### `npm run eject`
+Go to the project directory
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  cd VisionExpress.com
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the server
 
-## Learn More
+```bash
+  npx eslint . --fix
+  npm run start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  `npm run test`
+```
+### Authors
+
+| 👤 Name | Github | Twitter | LinkedIn |
+|------|--------|---------|----------|
+|Waleed Amjad|[@caasperr](https://github.com/caasperr)|[@developerwaleed](https://twitter.com/developerwaleed)|[@developerwaleed](https://www.linkedin.com/in/developerwaleed/)|
+
+## Acknowledgments
+- Design idea [Nelson Sakwa on Behance.](https://www.behance.net/sakwadesignstudio)
+- Microverse
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
+
+
+
