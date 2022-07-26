@@ -16,9 +16,11 @@
 
 ## Demo
 
-[herokuapp]()
-[netlify]()
+[netlify](https://monumental-praline-eef042.netlify.app/)
 
+## Project Presentation
+
+[LINK](https://drive.google.com/file/d/1uVoRE-J1wOj8Vg1PQLNYQ8Jli4U1A13x/view?usp=sharing)
 
 ## Run Locally
 
