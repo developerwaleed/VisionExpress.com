@@ -1,0 +1,50 @@
+.loadingHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 9.5rem;
+}
+
+.Loader {
+  width: 50px;
+  height: 50px;
+
+  --c: radial-gradient(farthest-side, #fff 92%, #0000);
+
+  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  animation: s7 1s infinite;
+}
+
+.itemCard {
+  min-height: 390px;
+  max-width: 300px;
+}
+
+.itemImage img {
+  width: 45%;
+}
+
+.itemName {
+  font-size: 1.1rem;
+}
+
+.itemPrice {
+  font-size: 1.7rem;
+}
+
+.itemCategory {
+  font-size: 0.7rem;
+}
+
+.itemDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    row-gap: 0.5rem;
+    padding: 0.7rem 0.5rem;
+  }
