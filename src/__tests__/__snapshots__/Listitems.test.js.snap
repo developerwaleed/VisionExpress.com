@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders properly 1`] = `
+Array [
+  <div
+    className="searchBar"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="searchInput"
+        onChange={[Function]}
+        placeholder="Search Products"
+        type="text"
+        value=""
+      />
+    </form>
+    <button
+      className="searchBtn"
+      type="submit"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+        />
+      </svg>
+    </button>
+  </div>,
+  <div
+    className="itemsSection"
+  >
+    <div
+      className="loadingHome"
+    >
+      <div
+        className="Loader"
+      />
+    </div>
+  </div>,
+]
+`;

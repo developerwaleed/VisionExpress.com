@@ -11,7 +11,7 @@ it('renders properly', () => {
         <Provider store={store}>
           <ItemCard />
         </Provider>
-      </Router>
+      </Router>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
