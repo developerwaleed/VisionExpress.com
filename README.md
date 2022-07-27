@@ -63,6 +63,7 @@ Run the tests
 ## Acknowledgments
 - Design idea [Nelson Sakwa on Behance.](https://www.behance.net/sakwadesignstudio)
 - Microverse
+- [HammadSiddique] (https://github.com/HammadSiddique).
 
 ## 🤝 Contributing
 
