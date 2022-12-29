@@ -65,7 +65,11 @@
 
 <details>
 <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React</a></li>
+  </ul>
 </details>
+
 
 <!-- Features -->
 
