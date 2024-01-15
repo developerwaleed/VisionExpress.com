@@ -1,7 +1,7 @@
 import { combineReducers, applyMiddleware } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import { itemsReducer, selectedItemsReducer } from './products/products';
+import { itemsReducer, selectedItemsReducer } from './products/reducers';
 
 const rootReducer = combineReducers({
   allProducts: itemsReducer,
