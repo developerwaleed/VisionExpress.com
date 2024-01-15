@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: baseline;
   height: 4rem;
-  padding: 15px;
+  padding: 15px 20px 0 20px;
   box-shadow: rgb(50 50 93 / 15%) 0 4px 6px -2px;
   background-color: var(--color-2);
   color: #fff;
@@ -22,7 +22,35 @@
   letter-spacing: 0.5px;
   font-size: 1.6rem;
 }
+/* .Lefticons{
+  display: flex;
+  gap : 30px;
+}  */
 
-.icons {
-  padding: 0 5px;
+.carticon{
+  background: none;
+  border: none;
+  color: white;
+  z-index: 9;
+}
+
+.carticon:hover{
+  cursor: pointer;
+  
+}
+
+.counter{
+  z-index: 3;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c11515;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -35px;
+  /* margin-right: 10px; */
+  padding-right: 2px;
+font-size: 10px;
 }
