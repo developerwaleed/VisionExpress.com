@@ -10,11 +10,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 35px;
   margin: 4% 6%;
   background-color: #fff;
   border-radius: 20px;
   min-height: 600px;
   box-shadow: 6px 8px 9px -2px rgba(0, 0, 0, 0.34);
+  height: 10vh;
+}
+
+
+.detailsImg{
+  width: 300px;
 }
 
 .detailsImg img {
@@ -33,6 +40,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   justify-content: center;
 }
 
@@ -72,6 +80,21 @@
   font-size: 0.8rem;
   opacity: 0.8;
   text-transform: none;
+  width: 35vw;
+}
+
+.catnCartDiv{
+  display: flex;
+}
+
+.cartPlus{
+  background: none;
+  border: none;
+  position: absolute;
+  padding-left: 12rem;
+}
+.cartPlus:hover{
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

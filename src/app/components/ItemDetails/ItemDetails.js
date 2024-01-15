@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { FaCartPlus } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchItemDetail, removeSelectedItems } from '../../../redux/products/products';
+import { fetchItemDetail, removeSelectedItems } from '../../../redux/products/actions';
 import styles from './ItemDetails.module.css';
+
+
 
 const ItemDetails = () => {
   const { productId } = useParams();
@@ -17,6 +20,35 @@ const ItemDetails = () => {
       dispatch(removeSelectedItems());
     };
   }, []);
+  
+  const handleAddToCart = () => {
+    const cartItem = {
+      id: product.id,
+      image: product.image,
+      name: product.title,
+      price: product.price,
+      category: product.category,
+      description: product.description,
+      quantity: 1, // Assuming you want to add one unit by default
+    };
+  
+    const existingCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  
+    const existingItemIndex = existingCartItems.findIndex(item => item.id === cartItem.id);
+  
+    if (existingItemIndex !== -1) {
+      existingCartItems[existingItemIndex].quantity += cartItem.quantity;
+    } else {
+      existingCartItems.push(cartItem);
+    }
+  
+    localStorage.setItem('cart', JSON.stringify(existingCartItems));
+  
+    // Alert or any other action you want to perform after adding to cart
+    alert(`${cartItem.quantity} ${cartItem.name}(s) added to cart!`);
+  };
+  
+
   return (
     <div className={styles.productContainer}>
       {Object.keys(product).length === 0 ? (
@@ -34,7 +66,13 @@ const ItemDetails = () => {
                 {price}
               </p>
             </h3>
-            <h4 className={styles.itemCategory}>{category}</h4>
+            <div className={styles.catnCartDiv}>
+              <h4 className={styles.itemCategory}>{category}</h4>
+              <button className={styles.cartPlus}  onClick={handleAddToCart}>
+                <FaCartPlus size={25} />
+              </button>
+
+            </div>
             <p className={styles.itemDescription}>{description}</p>
           </div>
         </div>
