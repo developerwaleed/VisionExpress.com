@@ -34,6 +34,60 @@
   padding: 7% 4%;
 }
 
+.notfoundimg{
+    filter: brightness(1.5);
+    width: 120px;
+}
+
+.notfoundimgDiv{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 92vw;
+}
+
+/* styles.module.css */
+
+.paginationParent {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination button {
+  background-color: white;
+  border: 1px;
+  border-radius: 10px;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 4px;
+  margin-bottom: 10px;
+}
+
+.pagination button:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+
+.paginationParent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .searchBar {
     margin-top: 3%;
