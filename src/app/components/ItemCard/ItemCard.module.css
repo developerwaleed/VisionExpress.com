@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10rem 9.5rem;
+  height: 50vh;
+  width: 93vw;
+  /* margin:  0 10rem 0px 0px; */
 }
 
 .Loader {
@@ -72,7 +74,7 @@
 
 @media screen and (min-width: 768px) {
   .loadingHome {
-    margin: 11rem 43rem;
+    /* margin: 11rem 43rem; */
   }
 
   .itemCard {
